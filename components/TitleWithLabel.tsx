@@ -1,15 +1,41 @@
+import clsx from "clsx";
 import React from "react";
 
-const TitleWithLabel = ({ title, label }: { title: string; label: string }) => {
+const TitleWithLabel = ({
+  title,
+  label,
+  className,
+  attachGradientTo = "label",
+  description,
+}: {
+  title: string;
+  label: string;
+  attachGradientTo?: "label" | "title";
+  className?: string;
+  description?: string;
+}) => {
   return (
-    <div>
-      <span className="text-gold uppercase tracking-wider block max-w-max relative">
-        <span className="absolute w-16 h-16 bg-gradient-to-b from-primary-faint/70 rotate-45 to-transparent rounded-full -right-8 -top-8" />
+    <div className={className}>
+      <span className="text-gold uppercase tracking-widest block max-w-max relative">
+        {attachGradientTo === "label" && (
+          <span className="absolute w-16 h-16 bg-gradient-to-b from-primary-faint/70 rotate-45 to-transparent rounded-full -right-8 -top-8" />
+        )}
         {label}
       </span>
-      <h2 className=" mt-2 text-secondary text-3xl font-medium max-w-xl">
-        {title}
+      <h2
+        className={clsx(
+          "relative mt-2 text-secondary text-3xl lg:text-4xl font-semibold w-max",
+          className
+        )}
+      >
+        {attachGradientTo === "title" && (
+          <span className="absolute w-32 h-32 bg-gradient-to-b from-primary-faint/70 rotate-45 to-transparent rounded-full -right-12 -top-12" />
+        )}
+        <span className="relative">{title}</span>
       </h2>
+      {description && (
+        <p className="max-w-lg mt-4 text-secondary/60">{description}</p>
+      )}
     </div>
   );
 };

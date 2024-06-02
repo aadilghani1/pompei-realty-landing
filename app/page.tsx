@@ -5,14 +5,22 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Areas from "@/components/Areas";
 import LinksToOtherSites from "@/components/LinksToOtherSites";
+import Features from "@/components/Features";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
-    <main>
-      <Navigation />
-      <Hero />
-      <LinksToOtherSites />
-      <Areas />
-    </main>
+    <>
+      <header>
+        <Navigation />
+      </header>
+      <main>
+        <Hero />
+        <LinksToOtherSites />
+        <Areas />
+        <Features />
+        <Testimonials />
+      </main>
+    </>
   );
 }

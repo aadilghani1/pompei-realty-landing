@@ -5,10 +5,11 @@ import Container from "./Container";
 
 const Areas = () => {
   return (
-    <Container className="my-24">
+    <Container className="mb-24">
       <TitleWithLabel
         title="We are the leading agency in Rome for medium & long term rentals"
         label="Where are we"
+        className="max-w-2xl"
       />
       <div className="grid mt-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <AreaLink image="/areas/area1.png" url="/" title="Trastevere" />

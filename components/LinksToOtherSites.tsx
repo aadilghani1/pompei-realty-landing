@@ -4,7 +4,7 @@ import Container from "./Container";
 
 const LinksToOtherSites = () => {
   return (
-    <Container>
+    <Container className="mb-24">
       <div className="flex gap-10">
         <CTAwithImage
           title="Vacation in Rome"
