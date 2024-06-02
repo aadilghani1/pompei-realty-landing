@@ -1,10 +1,11 @@
 import React from "react";
 import TitleWithLabel from "./TitleWithLabel";
 import AreaLink from "./AreaLink";
+import Container from "./Container";
 
 const Areas = () => {
   return (
-    <div className="my-20 lg:my-32">
+    <Container className="my-24">
       <TitleWithLabel
         title="We are the leading agency in Rome for medium & long term rentals"
         label="Where are we"
@@ -15,7 +16,7 @@ const Areas = () => {
         <AreaLink image="/areas/area3.png" url="/" title="Monteverde" />
         <AreaLink image="/areas/area4.png" url="/" title="Other Areas" />
       </div>
-    </div>
+    </Container>
   );
 };
 
