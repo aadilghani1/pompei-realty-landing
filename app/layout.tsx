@@ -13,7 +13,6 @@ export const metadata: Metadata = {
     "Pompei Realty provides fully furnished apartments for expats in the heart of Rome.",
   keywords: "rome, expat, housing, apartment, furnished, italy",
   robots: "index, follow",
-  viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({

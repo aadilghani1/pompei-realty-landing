@@ -19,7 +19,7 @@ const Button = ({
       type={type}
       disabled={disabled}
       className={clsx(
-        "text-lg uppercase tracking-widest",
+        "text-lg uppercase tracking-widest text-secondary font-medium",
         isSecondary ? "" : "bg-primary-faint rounded-xl px-6 py-4"
       )}
       onClick={onClick}

@@ -13,9 +13,13 @@ export default function Home() {
         <Hero />
       </Container>
       <Container>
-        <div className="flex gap-6">
-          <CTAwithImage title="Vacation in Rome" url="/" />
-          <CTAwithImage title="Work in Rome" url="/" />
+        <div className="flex gap-10">
+          <CTAwithImage
+            title="Vacation in Rome"
+            url="/"
+            image="/cta/vacation.png"
+          />
+          <CTAwithImage title="Work in Rome" url="/" image="/cta/work.webp" />
         </div>
         <Areas />
       </Container>
