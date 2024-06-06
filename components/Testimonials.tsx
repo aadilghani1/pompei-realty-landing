@@ -48,7 +48,7 @@ const Testimonials = () => {
           description="Fusce venenatis tellus a felis scelerisque, non pulvinar est pellentesque."
           className="max-w-sm"
         />
-        <div className="flex gap-2 pt-8 mt-auto">
+        <div className="flex gap-2 py-8 mt-auto">
           <button
             className="text-gold opacity-50 hover:opacity-75 hover:bg-primary/20 transition-all border border-gold rounded-full p-2"
             onClick={handlePrev}
