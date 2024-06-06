@@ -23,7 +23,7 @@ const FeatureCard = ({
     >
       <Icon size={iconSize} className="text-gold" />
       <div>
-        <h3 className="text-lg text-gold font-medium">{title}</h3>
+        <h3 className="text-lg text-gold mb-1 font-medium">{title}</h3>
         <p className="text-secondary/60">{description}</p>
       </div>
     </div>
