@@ -20,8 +20,8 @@ const TestimonialItem = () => {
 
       <p className="text-secondary">
         I highly recommend Jodi J. Appleby. She was attentive to our needs and
-        worked tirelessly to find us the perfect home. We couldn't be happier
-        with our new place!
+        worked tirelessly to find us the perfect home. We couldn&apos;t be
+        happier with our new place!
       </p>
       <div className="flex items-center gap-2 mt-4 border-yellow-950/10 border-t pt-4">
         <Image

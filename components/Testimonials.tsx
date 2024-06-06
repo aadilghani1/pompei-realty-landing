@@ -17,11 +17,11 @@ const Testimonials = () => {
   const ITEMS_LENGTH = 4;
 
   const handleNext = () => {
-    setCurrIdx(() => (currIdx + 1) % ITEMS_LENGTH);
+    setCurrIdx((prev) => (prev + 1) % ITEMS_LENGTH);
   };
 
   const handlePrev = () => {
-    setCurrIdx(() => (currIdx - 1 + ITEMS_LENGTH) % ITEMS_LENGTH);
+    setCurrIdx((prev) => (prev - 1 + ITEMS_LENGTH) % ITEMS_LENGTH);
   };
 
   useEffect(() => {
